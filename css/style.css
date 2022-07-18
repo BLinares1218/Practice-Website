@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 70px;
+  align-items: center;
+  background: rgb(150, 249, 249);
+}
+nav a {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  padding-left: 16px;
+}
+.logo {
+  width: 300px;
+}
+
+header {
+  display: flex;
+  background: #eadcff;
+  padding: 24px;
+  height: calc(100vh - 70px);
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 72px;
+}
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
+}
+.row {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: #05c7cf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#about h1 {
+  margin-bottom: 8px;
+}
+
+/* 
+about  
+*/
+
+/* wrapper to avoid wrapping "about"  */
+.section__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* wraps around left side to establish a width and allow for right side width to be set */
+.section__description--wrapper {
+  width: 60%;
+  padding: 0 24px;
+}
+#about {
+  background: rgb(255, 255, 181);
+  padding: 48px 0;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  padding: 24px;
+}
+
+/* wraps around image to set its overall width, target div of image not img */
+.about__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+
+/* set image to full width of wrapper  */
+#about img {
+  width: 100%;
+}
+
+/* addresses <p> in section  */
+.section__description--para {
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 24px;
+}
