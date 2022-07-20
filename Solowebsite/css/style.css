@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+.row {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+/* 
+
+nav bar  
+
+*/
+nav {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(165, 240, 255);
+  padding: 32px;
+}
+.logo {
+  max-width: 250px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  padding-right: 16px;
+}
+
+/* 
+
+header
+
+*/
+
+header {
+  height: calc(100vh - 70px);
+  background: rgb(240, 222, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
+}
+button {
+  background-color: #05c7cf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 
+
+About
+
+*/
+
+#about {
+  background: rgb(255, 255, 213);
+}
+
+#about h2,
+#discord h2,
+#contact h2 {
+  font-size: 60px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.section__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+.section__description--para {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.section__description--wrapper {
+  padding: 0 24px;
+  width: 60%;
+}
+.about__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+#about img {
+  width: 100%;
+}
+
+/* 
+
+Discord
+
+*/
+
+#discord {
+  background-color: rgb(198, 252, 255);
+}
+
+#discord img {
+  width: 100%;
+}
+.discord__img--wrapper {
+  width: 40%;
+}
+
+/* 
+
+Contact
+
+*/
+
+#contact {
+  background-color: aliceblue;
+  padding: 24px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
+form button {
+  margin-top: 24px;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+}
+
+/* 
+
+footer
+
+*/
+
+footer {
+  background-color: #05c7cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+footer img {
+  max-width: 280px;
+}
+
+footer ul {
+  margin: 24px 0;
+}
+
+footer ul li {
+  padding-left: 24px;
+}
+
+@media (max-width: 890px) {
+  .section__description--para {
+    font-size: 16px;
+  }
+  #discord h2,
+  #about h2,
+  #contact h2 {
+    font-size: 32px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  header h1 {
+    font-size: 38px;
+    max-width: 100%;
+  }
+  header img {
+    margin-top: 24px;
+  }
+  .subheader {
+    font-size: 1.2em;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .logo {
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .section__description {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+  header {
+    text-align: center;
+  }
+  header img {
+    max-width: 100%;
+  }
+  .section__description--wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  #contact button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .discord__img--wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  .about__img--wrapper {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer li {
+    padding: 8px;
+  }
+
+  footer figure {
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (orientation: landscape) {
+  header h1 {
+    font-size: 32px;
+  }
+  .subheader {
+    font-size: 24px;
+  }
+  header img {
+    max-width: 100%;
+  }
+  nav ul {
+    display: none;
+  }ß
+  nav .logo,
+  footer img {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  header {
+    height: 100%;
+  }
+  .row {
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header {
+    text-align: left;
+  }
+  header img {
+    margin: 0 auto;
+    padding: 48px;
+  }
+  .section__description {
+    flex-direction: row;
+    padding: 10px 0;
+  }
+  #discord .section__description {
+    flex-direction: row;
+  }
+}
